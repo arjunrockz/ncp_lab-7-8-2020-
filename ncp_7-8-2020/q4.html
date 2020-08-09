@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Q3 </title>
+	<style type="text/css">
+		.cropped1 {
+			width: 200px; /* width of container */
+			height: 200px; /* height of container */
+			object-fit: cover;
+			border: 5px solid black;
+		}
+	</style>
+	<script type="text/javascript">
+		function showText(text){
+			document.getElementById("text").innerHTML=text;
+		}
+		function hide(){
+			document.getElementById("text").innerHTML="";
+		}
+		function display() {
+			var largeImage = document.getElementById('largeImage');
+			largeImage.style.display = 'block';
+			largeImage.style.width=600+"px";
+			largeImage.style.height=600+"px";
+			var url=largeImage.getAttribute('src');
+			window.open("src",'Image','width=largeImage.stylewidth,height=largeImage.style.height,resizable=1');
+		}
+	</script>
+</head>
+<body>	
+	<div style="text-align: center"><img id="largeImage" src="Khans.jpg" usemap="#rectmap">
+		<map name="rectmap">
+		<area shape="rect1" coords="5,4,210,368" onclick="display()" onMouseOver="showText('Shahrukh')" onMouseOut="hide();">
+		<area shape="rect1" coords="214,6,427,366" onclick="display()" onMouseOver="showText('Salman')" onMouseOut="hide();">
+		<area shape="rect1" coords="446,5,656,367" onclick="display()"onMouseOver="showText('Aamir')" onMouseOut="hide();">
+	</map>
+		<h2 id="text"></h2>
+	</div>
+</body>
+</html>

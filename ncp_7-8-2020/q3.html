@@ -1,0 +1,17 @@
+<html>   
+   <head>
+      <title>Using JavaScript Image Map</title>
+      
+      <script type = "text/javascript">
+         function test(img) {
+            var myImg = document.getElementById("image");
+            viewwin = window.open(myImg,'viewwin',width='500', height='700' );    
+         }
+    
+      </script>
+   </head>
+   <body>
+      <a target="_blank" href="#" onClick='test(this)'><img src="image.jpg" id="image"/></a>
+   </body>
+</html>
+

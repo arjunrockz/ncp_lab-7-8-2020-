@@ -1,0 +1,19 @@
+<html>
+    <script type = "text/javascript"> 
+     
+        function color(color){
+            document.body.style.background = color; 
+        }
+        function normal(color){
+            document.body.style.background = color; 
+        }
+        function test(img) {
+            viewwin = window.location.replace("http://www.w3schools.com");
+         }
+    </script>
+    
+    <body>
+
+      <a target="_blank" href="#" onClick='test(this)'><img src="image.jpg" id="image" onmouseover="color('red')" onmouseout="normal('white')"  /></a>
+    </body>
+</html>
